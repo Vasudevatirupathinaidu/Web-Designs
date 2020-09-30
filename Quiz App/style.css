@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  font-size: 0.75em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #52a7c1;
+  background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-container {
+  max-width: 90%;
+  width: 600px;
+  background-color: rgb(218, 240, 227);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
+}
+
+.quiz-header {
+  padding: 3rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+}
+
+button {
+  color: white;
+  display: block;
+  font-family: inherit;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 1.3rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #07d4b2 74%);
+}
+
+button:hover {
+  background-color: #6dc5bf;
+  background-image: linear-gradient(315deg, #6bc2bc 0%, #05ccab 74%);
+}
+
+input[type='radio'] {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+label {
+  vertical-align: 1px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 480px) {
+  :root {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+  :root {
+    font-size: 0.95em;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  :root {
+    font-size: 1.1em;
+  }
+}
